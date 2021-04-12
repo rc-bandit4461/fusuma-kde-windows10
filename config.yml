@@ -3,7 +3,9 @@ swipe:
     up:
       command: 'xdotool key Ctrl+F8'
     down:
-      command: 'xdotool key Super+d'
+      #command: 'xdotool key Super+d' # Default one, doesn't need any extra config
+      command: 'xdotool key Alt+Shift+d' # Needs to have "Minimize All Windows" widget, with the associated shortcut
+    
     left:
       command: 'xdotool key Ctrl+Super+Right'
     right:
@@ -19,10 +21,8 @@ pinch:
   2:
     in:
       command: 'xdotool key Ctrl+Super+Up'
-      threshold: 0.75
     out:
       command: 'xdotool key ctrl+Super+Down'
-      threshold: 0.75
 
 threshold:
   swipe: 0.75
